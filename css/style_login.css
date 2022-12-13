@@ -1,0 +1,98 @@
+body{
+    background: rgb(235, 235, 235);
+    font-family: 'Raleway', sans-serif;
+}
+
+.auth_block{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+    background: white;
+    border-radius: 20px;
+}
+
+.form_auth_block{
+    width: 70%;
+    height: 90%;
+    position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
+
+.head_text{
+    display: block;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.auth_name{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.auth_pass{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    position: relative;
+}
+.password-control {
+    position: absolute;
+    top: 223px;
+    right: 10px;
+    width: 22px;
+    height: 20px;
+    background: url(/img/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(/img/no-view.svg) 0 0 no-repeat;
+}
+.auth_style input{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgb(235, 235, 235);
+}
+.button_remember{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.rem_text{
+    color: grey;
+    margin-top: 4px;
+    margin-right: 70px;
+}
+.link_rem{
+    text-decoration: none;
+    color: grey;
+    margin-top: 4px;
+}
+.button_remember input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(235, 235, 235);
+}
+.auth_button{
+    background: rgb(51, 51, 51);
+    margin-top: 90px;
+    color: white;
+    font-size: 18px;
+    display: block;
+    width: 45%;
+    border-radius: 30px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+}

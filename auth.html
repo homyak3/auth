@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html leng="english">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_login.css">
+</head>
+<body>
+<main>
+ <div class="auth_block">
+  <div class="form_auth_block">
+    <p class="head_text">ACCOUNT LOGIN</p>
+      <form action="#" method="post">
+    	   <p class="auth_name">USERNAME</p>
+    	   <div class="auth_style">
+                <input type="text" name="login" required>
+           </div>
+            <p class="auth_pass">PASSWORD</p>
+           <div class="auth_style">
+                <input type="password" id = "password-input" name="password" required>
+                <a href="#" class="password-control"></a>
+           </div>
+           <div class="button_remember">
+                <input type="checkbox" name="remember">
+                <label class="rem_text">Remember me</label>
+                <a class="link_rem" href="#">Forgot Password?</a>
+           </div>
+                <button class="auth_button" type="submit" name="auth_submit">Login</button>
+       </form>
+  </div>
+ </div>
+ <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('body').on('click', '.password-control', function(){
+	if ($('#password-input').attr('type') == 'password'){
+		$(this).addClass('view');
+		$('#password-input').attr('type', 'text');
+	} else {
+		$(this).removeClass('view');
+		$('#password-input').attr('type', 'password');
+	}
+	return false;
+});
+</script>
+</main>
+</body>
+</html>
